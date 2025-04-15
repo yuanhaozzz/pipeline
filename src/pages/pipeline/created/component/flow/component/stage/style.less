@@ -1,0 +1,424 @@
+.stage-box {
+  position: relative;
+  width: 280px;
+  border-radius: 2px;
+  padding: 0 0 24px;
+  background: #f5f5f5;
+  margin: 0 80px 0 0;
+  font-size: 18px;
+  margin-bottom: 50px;
+
+  .stage-item-consumptionIcon {
+    position: absolute;
+    right: 0;
+    top: 1px;
+    width: 30px;
+    height: 100%;
+    z-index: 1;
+
+    .stage-item-consumptionIcon-items {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .stage-item {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+
+    .flow-mark-stage {
+      position: absolute;
+      right: 2px;
+      top: -3px;
+      transform: scale(0.7);
+      color: #1890ff;
+      font-weight: bold;
+      font-size: 12px
+    }
+
+    .stage-item-icon-box {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .stage-operate-danger {
+      position: absolute;
+      right: 26px;
+      color: red;
+    }
+
+    .stage-item-name {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 140px;
+      font-size: 12px;
+      display: block;
+    }
+
+    .stage-item-retry {
+      position: absolute;
+      right: 0;
+      top: 17px;
+      padding: 0 20px 10px;
+      color: #3c96ff;
+      font-size: 16px;
+      z-index: 11;
+    }
+
+    .stage-item-failed {
+      margin-top: 4px;
+
+      .iconfont {
+        font-size: 20px;
+        color: #ff5656;
+      }
+    }
+
+    .stage-item-skipped {
+      margin-top: 4px;
+
+      .iconfont {
+        font-size: 20px;
+        color: #9BABB8;
+      }
+    }
+
+    .stage-operate-add {
+      position: absolute;
+      right: 50px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 17px;
+      color: #fff;
+      opacity: 0;
+      margin-top: 1px;
+    }
+
+    .stage-operate-add:hover {
+      color: #3c96ff;
+    }
+
+    .stage-operate-close {
+      position: absolute;
+      right: 25px;
+      top: 50%;
+      font-size: 12px;
+      color: #000;
+      background-color: #fff;
+      border-radius: 50px;
+      width: 20px;
+      height: 20px;
+      opacity: 0;
+      transform: scale(.9) translateY(-50%);
+      transform-origin: center;
+      z-index: 1;
+    }
+
+    .stage-operate-close:hover {
+      color: #fff;
+      border-color: #ff5656;
+      background-color: #ff5656;
+    }
+  }
+
+
+
+  .first-stage {
+    color: #000;
+    border-color: #1a6df3;
+    background-color: #d1e2fd;
+  }
+
+  .stage-arrow-left {
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    left: -80px;
+    top: 24px;
+
+    .icon {
+      position: absolute;
+      right: -7px;
+      top: -8px;
+    }
+  }
+
+  .stage-arrow-left::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    left: -4px;
+    top: -3px;
+    border-radius: 50%;
+  }
+
+  .common-add-button {
+    position: absolute;
+    cursor: pointer;
+    z-index: 3;
+    width: 18px;
+    height: 18px;
+    border-radius: 20px;
+    border: 1px solid #addaff;
+    transition: all .3s ease;
+    background-color: #fff;
+
+    i {
+      font-size: 12px;
+    }
+  }
+
+  .common-add-button:hover {
+    border-color: #3c96ff;
+    background-color: #3c96ff;
+    color: #fff !important;
+  }
+
+  .left-add-stage {
+    top: 16px;
+    left: -50px;
+  }
+
+  .right-add-stage {
+    left: -14px;
+  }
+
+  .stage-arrow-right {
+    position: absolute;
+    top: 16px;
+    right: -44px;
+    z-index: 3;
+
+    .right-line {
+      position: absolute;
+      width: 40px;
+      height: 2px;
+      left: -45px;
+      top: 8px;
+      background-color: #3c96ff;
+    }
+  }
+
+
+  .stage-add-job {
+    height: 100%;
+    width: 40px;
+    border-left: 1px dashed #3c96ff;
+    border-bottom: 1px dashed #3c96ff;
+    position: absolute;
+    top: 24px;
+    left: -32px;
+
+    button {
+      border: none;
+      outline: none;
+      position: absolute;
+      padding: 0 10px;
+      height: 24px;
+      border: 1px solid #addaff;
+      border-radius: 22px;
+      color: #3c96ff;
+      font-size: 10px;
+      cursor: pointer;
+      background-color: #fff;
+      box-shadow: 0 2px 4px 0 rgba(60, 150, 255, 20%);
+      right: -60px;
+      bottom: -12px;
+      transition: all .2s ease-in-out;
+
+      i {
+        font-size: 12px;
+        margin-top: 2px;
+      }
+
+      span {
+        font-size: 12px;
+        white-space: normal;
+      }
+    }
+
+    button:hover {
+      background-color: #3c96ff;
+      color: #fff;
+      border-color: #3c96ff;
+    }
+  }
+
+
+  .stage-add-job-first {
+    border: none;
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+    bottom: -20px;
+    opacity: 0;
+
+    button {
+      // position: initial
+      right: 50%;
+      transform: translateX(50%);
+      white-space: nowrap;
+      width: 100px;
+    }
+  }
+
+  .stage-add-layer,
+  .stage-add-layer-right {
+    position: absolute;
+    display: block;
+    width: 160px;
+    background-color: #fff;
+    border: 1px solid #dcdee5;
+    top: 34px;
+    left: -51px;
+    padding: 5px 0;
+    z-index: 10;
+
+    .layer-item {
+      padding: 0 15px;
+      font-size: 12px;
+      line-height: 32px;
+      cursor: pointer;
+      color: #63656e;
+    }
+
+    .layer-item:hover {
+      color: #3c96ff;
+      background-color: #eaf3ff;
+    }
+  }
+
+  .stage-add-layer-right {
+    left: -1px;
+    top: 17px;
+  }
+
+  .stage-add-job-first-element {
+    opacity: 1;
+  }
+}
+
+.stage-box:hover .stage-add-job-other-element {
+  opacity: 1;
+}
+
+#root {
+  .stage-disabled {
+    .stage-item {
+      background-color: #f3f3f3;
+      border-color: #d0d8ea;
+      color: #000;
+    }
+
+    .stage-item-name {
+      text-decoration: line-through;
+      color: #c4cdd6;
+    }
+
+    .stage-item-icon-box {
+      visibility: hidden;
+    }
+
+    .jobs-box {
+      .job-item {
+        .item-container {
+          .job-item-detail {
+            color: #fff;
+            background-color: #63656e;
+
+            .detail-num {
+              background-color: #63656e;
+            }
+
+            .detail-name {
+              text-decoration: line-through;
+            }
+          }
+
+          .detail-left-box,
+          .detail-retry-op-more,
+          .detail-time {
+            visibility: hidden;
+          }
+        }
+
+        .step-box {
+          .step-item {
+            .step-item-name {
+              color: #c4cdd6;
+              text-decoration: line-through;
+            }
+          }
+
+          .step-item-left,
+          .step-item-time {
+            visibility: hidden;
+          }
+        }
+      }
+
+
+    }
+  }
+}
+
+#root {
+  .job-item-disabled {
+    .item-container {
+      .job-item-detail {
+        color: #fff;
+        background-color: #63656e;
+
+        .detail-num {
+          background-color: #63656e;
+        }
+
+        .detail-name {
+          text-decoration: line-through;
+        }
+      }
+
+      .detail-left-box,
+      .detail-retry-op-more,
+      .detail-time {
+        visibility: hidden;
+      }
+    }
+
+    .step-box {
+      .step-item {
+        .step-item-name {
+          color: #c4cdd6;
+          text-decoration: line-through;
+        }
+      }
+
+      .step-item-left,
+      .step-item-time {
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+#root {
+  .step-box {
+    .step-item-disabled {
+      .step-item-name {
+        color: #c4cdd6;
+        text-decoration: line-through;
+      }
+
+      .step-item-left,
+      .step-item-time {
+        visibility: hidden;
+      }
+    }
+  }
+}

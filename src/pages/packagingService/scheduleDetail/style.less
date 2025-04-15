@@ -1,0 +1,88 @@
+.packagingService-schedule-detail-container {
+  background-color: #fff;
+  padding: 0 15px 5px;
+  position: relative;
+
+  .back {
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+
+    .back-button {
+      cursor: pointer;
+    }
+
+    .back-button:hover {
+      opacity: .8;
+    }
+  }
+
+  .operate-button {
+    position: absolute;
+    right: 0;
+  }
+
+  .packagingService-firstData-firld {
+    margin: 5px 30px;
+
+    .firstData-firld-container {
+      font-size: 12px;
+      position: relative;
+
+      td {
+        padding: 10px 0;
+
+      }
+
+      .name {
+        font-size: 12px;
+        color: #AAA;
+        white-space: nowrap;
+        // width: 100px;
+        // text-align: right;
+      }
+
+      .value {
+        width: calc(100% - 100px);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .copy {
+        font-size: 12px;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .scheduleDetail-container {
+    display: flex;
+    border: 1px solid #ddd;
+
+    .left {
+      width: 134px;
+      background: #F2F2F2;
+      text-align: center;
+
+      .item {
+        line-height: 35px;
+      }
+
+      .active {
+        background: #fff;
+      }
+    }
+
+    .right {
+      width: calc(100% - 154px);
+      height: auto;
+      padding: 10px;
+      display: inline-block;
+    }
+
+    b {
+      font-size: 15px;
+    }
+  }
+}

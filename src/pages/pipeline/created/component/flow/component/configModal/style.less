@@ -1,0 +1,85 @@
+.config-detail-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 45%);
+  z-index: 100;
+  opacity: 0;
+  transition: all .3s;
+
+
+  .ant-form-item-label label {
+    width: 100%;
+  }
+
+  .ant-form-item {
+    margin-bottom: 16px;
+  }
+
+  .layout-text-title {
+    margin-bottom: 2px;
+  }
+
+  .ant-form-item-label {
+    padding-bottom: 1px;
+  }
+
+  .content {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 640px;
+    box-shadow: -5px 0 8px -5px #0003;
+    background-color: #fff;
+    z-index: 1;
+
+    .content-header {
+      background: #fff;
+      height: 60px;
+      width: 100%;
+
+      .content-header-left {
+        background-color: #3a84ff;
+        color: #fff;
+        cursor: pointer;
+        font-size: 12px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        width: 30px;
+        margin-right: 20px;
+      }
+
+      .content-header-right {
+        flex: 1;
+        font-size: 12px;
+      }
+
+      .content-header-env {
+        position: absolute;
+        right: 20px;
+        top: 0;
+        width: 80px;
+        height: 60px;
+        font-size: 12px;
+        color: #2274bf;
+        cursor: pointer;
+      }
+    }
+
+    .content-box {
+      height: calc(100vh - 60px);
+      position: relative;
+
+      .form {
+        overflow-y: scroll;
+        height: 100%;
+        padding: 20px 32px 10px;
+      }
+    }
+  }
+
+}

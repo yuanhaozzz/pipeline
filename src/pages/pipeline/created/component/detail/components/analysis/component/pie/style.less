@@ -1,0 +1,34 @@
+.flow-plugin-reportAnalysis-pie-container {
+  height: 30vh;
+  position: relative;
+
+  .legend-list {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 90%;
+    z-index: 9;
+    width: 300px;
+    font-size: 12px;
+
+    .legend-list-item {
+      cursor: pointer;
+
+      .item-line {
+        width: 10px;
+        height: 3px;
+        border-radius: 10px;
+        margin-right: 5px;
+      }
+    }
+
+    .legend-list-item-active {
+      text-decoration: line-through;
+    }
+
+    .legend-list-item:hover {
+      background: #f8f8f8;
+    }
+  }
+}

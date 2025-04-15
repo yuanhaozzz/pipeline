@@ -1,0 +1,78 @@
+.packagingService-build-container {
+  .ant-modal-body {
+    padding-top: 8px;
+  }
+
+  // min-height: 20vh;
+  .build-title {
+    position: relative;
+
+    .first {
+      .tab-item:first-child {
+        color: #539fff;
+      }
+
+      .tab-item:last-child {
+        color: #d7d7d7;
+      }
+
+      .tab-item:first-child .circle {
+        background-color: #539fff;
+      }
+
+      .tab-item:last-child .circle {
+        background-color: #d7d7d7;
+      }
+    }
+
+    .second {
+      .tab-item:first-child {
+        color: #d7d7d7;
+      }
+
+      .tab-item:last-child {
+        color: #539fff;
+      }
+
+      .tab-item:first-child .circle {
+        background-color: #d7d7d7;
+      }
+
+      .tab-item:last-child .circle {
+        background-color: #539fff;
+      }
+    }
+
+    .build-tab {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 12px;
+
+      .circle {
+        width: 17px;
+        height: 17px;
+        border-radius: 100px;
+        color: #fff;
+        margin: 0 3px;
+      }
+    }
+  }
+
+  // .ant-select-selection-item-content {
+  //   >div {
+  //     max-width: 470px;
+  //     white-space: nowrap;
+  //     overflow: hidden;
+  //     text-overflow: ellipsis;
+  //   }
+  // }
+}
+
+@media screen and (max-width: 1500px) {
+  /* 在此处设置元素的宽度 */
+  .packagingService-build-container {
+    width: 70% !important;
+  }
+}

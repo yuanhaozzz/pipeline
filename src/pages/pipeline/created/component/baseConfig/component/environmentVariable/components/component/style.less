@@ -1,0 +1,71 @@
+.flex-baseConfig-environmentVariable-container {
+  position: relative;
+  padding: 10px 20px;
+
+  nav {
+    position: relative;
+    cursor: pointer;
+
+    .arrow {
+      transform: rotate(-90deg);
+      transition: all .3s;
+
+    }
+
+    .arrow-rotate {
+      transform: rotate(0deg);
+    }
+
+    .remove-component {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+
+    .remove-component:hover {
+      color: red;
+    }
+  }
+
+  .item-content {
+    padding: 10px 0;
+  }
+
+  .add-component {
+    .add-component-button {
+      color: #1890ff;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .add-component-button:hover {
+      opacity: .7;
+    }
+  }
+
+  .environmentVariable-list-item {
+    margin: 5px 0 10px;
+    padding: 5px 10px;
+    border: 1px solid #cbcbcb;
+  }
+
+
+  .ant-switch {
+    background-color: #4caf50;
+  }
+
+  .ant-switch-checked {
+    background-color: #1890ff;
+  }
+
+  .component-disabled {
+    color: #00000040 !important;
+  }
+
+  .component-disabled:hover {
+    cursor: not-allowed;
+  }
+
+}

@@ -1,0 +1,130 @@
+.packagingService-list-container {
+  padding: 15px 10px 10px;
+  border-top: 5px solid #f2f2f2;
+
+  .packagingService-list-number {
+    font-size: 12px;
+
+    span {
+      padding: 0 5px;
+      color: #ff2262;
+    }
+  }
+
+  .list-more {
+    margin-bottom: 10px;
+
+    .box {
+      padding: 5px 10px;
+      font-size: 12px;
+      color: #999;
+      cursor: pointer;
+
+      .arrow {
+        font-size: 10px;
+        transform: rotate(0deg);
+        transition: all .3s;
+      }
+
+      .arrow-rotate {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .form-container {
+    flex-wrap: wrap;
+
+    .form-left {
+      width: 25%;
+    }
+
+    .form-right {
+      width: 75%;
+    }
+  }
+
+  .ant-table-tbody tr:nth-of-type(2) {
+    .ant-table-cell {
+      border-top: none;
+    }
+  }
+
+  .list-table {
+    margin-top: 10px;
+
+    .ant-btn:active,
+    .ant-btn:focus {
+      color: #000000d9 !important;
+      border-color: #d9d9d9 !important;
+      background: #fff;
+    }
+
+    .ant-btn:hover {
+      color: #40a9ff !important;
+      border-color: #40a9ff !important;
+      background: #fff;
+    }
+
+    .ant-table-cell {
+      font-size: 12px;
+      padding: 7px 10px;
+      // border-top: 5px solid #f2f2f2;
+    }
+
+    .color-name {
+      color: #7F7F7F;
+      white-space: nowrap;
+    }
+
+    tr:first-child .ant-table-cell {
+      border: none;
+    }
+
+    tr:last-child .ant-table-cell {
+      // border-bottom: 5px solid #f2f2f2;
+    }
+
+
+    .button-item {
+      // margin-bottom: 5px;
+    }
+  }
+
+  .list-column {
+    .status-icon {
+      font-size: 18px;
+    }
+  }
+
+  .list-column-cancle {
+    border: 1px solid #d9d9d9;
+    font-size: 12px;
+    height: 24px;
+    padding-top: 2px;
+    width: 25px;
+    cursor: pointer;
+  }
+
+  .cancle-disabled {
+    cursor: not-allowed;
+    color: rgba(0, 0, 0, 25%);
+    border-color: #d9d9d9;
+    background: #f5f5f5;
+    text-shadow: none;
+    box-shadow: none;
+  }
+
+  .not-disabled:hover {
+    color: #40a9ff;
+    border-color: #40a9ff;
+  }
+
+  .moreBtn {
+    width: 24px;
+
+    .anticon-more {
+      margin-left: -2px;
+    }
+  }
+}

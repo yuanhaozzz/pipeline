@@ -1,0 +1,120 @@
+.pipeline-template-modal-container {
+  .ant-modal-body {
+    padding: 20px 0 0;
+  }
+
+  .pipeline-template-container {
+    .pipeline-template-top {
+      border-bottom: 1px solid #dde4eb;
+      border-radius: 2px 2px 0 0;
+      box-shadow: 0 2px 4px 0 #3339480d;
+      height: 51px;
+      padding: 0 20px;
+
+      h2 {
+        font-size: 12px;
+
+      }
+    }
+
+    .pipeline-template-content {
+      height: 500px;
+
+      .content-left,
+      .content-right {
+        height: 100%;
+        overflow-y: scroll;
+      }
+
+      .content-right::-webkit-scrollbar {
+        display: none;
+      }
+
+      .content-left::-webkit-scrollbar {
+        display: none;
+      }
+
+
+      .content-left {
+        width: 60%;
+        padding: 20px;
+        // padding-right: 0;
+        box-sizing: border-box;
+
+        h4 {
+          color: #c3cdd7;
+          font-size: 12px;
+          margin: 0 20px 18px 0;
+        }
+
+        .content-left-list {
+          flex-wrap: wrap;
+
+          .action {
+            border: 1px solid #3c96ff;
+
+            .item-name {
+              background-color: #4f97ff;
+              color: #fff;
+            }
+
+            .right-icon {
+              opacity: 1;
+            }
+          }
+
+          li {
+            width: 30%;
+            border: 1px solid #dde4eb;
+            border-radius: 2px;
+            box-shadow: 0 2px 2px 0 #00000029, 0 0 0 1px #00000014;
+            cursor: pointer;
+            height: 150px;
+            overflow: hidden;
+            position: relative;
+            margin-right: 19px;
+            margin-bottom: 10px;
+            position: relative;
+
+            .item-icon {
+              height: calc(100% - 36px);
+              border: 1px solid;
+              border-color: #0000 #0000 #dde4eb;
+              box-sizing: border-box;
+            }
+
+            .item-name {
+              height: 36px;
+              font-size: 12px;
+            }
+
+            .right-icon {
+              position: absolute;
+              right: 5px;
+              top: 2px;
+              color: #4f97ff;
+              font-size: 20px;
+              opacity: 0;
+            }
+          }
+        }
+      }
+
+      .content-right {
+        width: 40%;
+        border-left: 1px solid #dde4eb;
+        padding: 20px 20px 0;
+        box-sizing: border-box;
+        position: relative;
+
+        .content-right-bottom {
+          position: absolute;
+          width: 100%;
+          padding: 20px;
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+}

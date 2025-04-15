@@ -1,0 +1,121 @@
+.flow-line-execModal-wrap {
+  width: 1000px !important;
+
+  .common-uploadfile-container {
+    .ocr-upload {
+      // margin-top: 10px;
+      height: auto;
+
+      .ocr-upload-button {
+        margin-bottom: 5px;
+      }
+
+      .ant-upload-text {
+        margin: 0;
+      }
+
+      .ocr-upload-input {
+        height: 100% !important;
+      }
+    }
+
+    .image-box {
+      height: auto;
+      padding: 3px;
+    }
+  }
+
+  .flowLine-desc-editor {}
+
+  .ant-modal-close {
+    right: 20px;
+  }
+
+  .flow-line-execModal-layer {
+    max-height: 70vh;
+    overflow-y: scroll;
+  }
+
+  .ant-form-item-label>label {
+    font-size: 12px;
+  }
+
+  .pipeline-title {
+    font-size: 12px;
+  }
+
+  .preview-content-env {
+    // margin: 10px 0;
+    // padding: 0 40px;
+
+    .ant-form label,
+    .ant-form input,
+    .ant-form div {
+      font-size: 12px !important;
+    }
+
+    .ant-form-item-label {
+      padding-bottom: 3px;
+      font-size: 12px !important;
+      font-weight: bold;
+    }
+
+    .ant-form-item-control {
+      font-size: 12px;
+    }
+
+    // font-size: 12px;
+    .env-header {
+      font-size: 12px;
+      padding-bottom: 10px;
+
+      .env-header-content {
+        cursor: pointer;
+      }
+
+      .arrow {
+        transform: rotate(0);
+        transition: all .3s;
+      }
+
+      .rotate-arrow {
+        transform: rotate(180deg);
+      }
+    }
+
+    .env-form {
+      // border: 1px solid #dde4eb;
+      // padding-top: 8px;
+      // border-top: 1px solid #dde4eb;
+      overflow: hidden;
+      margin-bottom: 10px;
+      // padding-bottom: 20px;
+      // background-color: #eee;
+      // margin-right: 20px;
+
+      .ant-form-item {
+        margin: 5px 0 20px;
+      }
+
+      .form-row {
+        padding: 0 10px;
+        flex-wrap: wrap;
+
+        .left,
+        .right {
+          width: 48%;
+        }
+      }
+    }
+  }
+
+  .flow-var-file-content-text {
+    background-color: #fff;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .flow-line-execModal-wrap {
+    width: 700px !important;
+  }
+}

@@ -1,0 +1,117 @@
+.common-uploadImage-container {
+  .ocr-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: border-color 0.3s;
+    text-align: center;
+    position: relative;
+    // width: 420px;
+    margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 150px;
+
+    .ocr-upload-button {
+      width: 160px;
+      height: 36px;
+      line-height: 36px;
+      position: relative;
+      text-align: center;
+      background-color: #1890ff;
+      border: none;
+      outline: none;
+      font-size: 14px;
+      color: #FFF;
+      margin-bottom: 15px;
+    }
+
+    .ocr-upload-input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: pointer;
+      z-index: 1;
+      color: transparent;
+    }
+
+    .ant-upload-drag-icon {
+      font-size: 46px;
+      color: #1890ff;
+      margin-bottom: 0;
+    }
+
+    .ant-upload-text {
+      font-size: 12px;
+      color: #999;
+      line-height: 18px;
+      text-align: center;
+      line-height: 21px;
+    }
+  }
+
+
+
+  .ocr-upload:hover {
+    border: 1px dashed #1890ff;
+  }
+
+
+  .image-box {
+    width: 300px;
+    position: relative;
+
+    .image {
+      width: 100%;
+    }
+
+    .image-layer {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      background-color: rgba(0, 0, 0, 70%);
+      font-size: 20px;
+      color: #fff;
+      transition: all .3s;
+    }
+  }
+
+  .image-box:hover .image-layer {
+    opacity: 1;
+  }
+
+
+}
+
+body {
+  .common-uploadImage-container {
+    .common-upload-style-2 {
+      width: 100px;
+      height: 100px;
+
+    }
+
+    .style-2 {
+      transition: all .3s;
+    }
+
+    .ocr-upload:hover .style-2 {
+      color: #1890ff !important;
+    }
+
+    .disabled-upload,
+    .disabled-upload input {
+      cursor: not-allowed !important;
+    }
+
+    .ocr-upload:hover .style-2 {
+      color: #1890ff !important;
+    }
+  }
+}

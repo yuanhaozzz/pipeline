@@ -1,0 +1,40 @@
+.VersionDiff-wrapper {
+  // margin-top: -40px;
+
+  .ant-modal {
+    width: 85% !important;
+
+    .ant-modal-body {
+      height: 72vh;
+      padding-top: 0;
+
+      .versionTitle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 6px;
+        padding-top: 13px;
+
+        button {
+          position: relative;
+          top: -2px;
+        }
+      }
+
+      >table {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .viewer {
+    overflow: auto;
+    height: 65vh;
+
+    * {
+      white-space: pre-wrap !important;
+      word-break: break-all !important;
+      font-family: monospace !important;
+    }
+  }
+}

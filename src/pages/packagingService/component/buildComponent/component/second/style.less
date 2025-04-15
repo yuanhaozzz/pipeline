@@ -1,0 +1,152 @@
+.packagingService-build-second-container {
+  .content-container {
+    height: calc(50vh);
+    // min-height: 30vh;
+  }
+
+  .template-item-text {
+    width: 70%;
+    line-height: 18px;
+
+    .template-item-description {
+      white-space: nowrap;
+
+      /* 防止文本换行 */
+      overflow: hidden;
+
+      /* 隐藏文本超出部分 */
+      text-overflow: ellipsis;
+
+      /* 在文本超出部分时显示省略号 */
+      width: 100%;
+    }
+  }
+
+
+  .second-tab {
+    padding: 0 0 10px;
+  }
+
+  .second-form {
+    .ant-form-item-label {
+      padding-bottom: 3px;
+    }
+
+    .ant-form-item {
+      margin-bottom: 15px;
+    }
+
+    .option {
+      width: 120px;
+      height: 35px;
+      background-color: rgba(255, 255, 255, 100%);
+      box-sizing: border-box;
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgba(228, 228, 228, 100%);
+      border-radius: 200px;
+      color: #999;
+      margin: 2px 0;
+    }
+
+    .action {
+      background-color: rgba(240, 247, 255, 100%);
+      border-color: rgba(160, 207, 255, 100%);
+      color: #409EFF;
+    }
+
+    .ant-checkbox,
+    .ant-radio {
+      // display: none;
+    }
+  }
+
+
+  .second-form-template {
+    .ant-radio-group {
+      display: block;
+    }
+
+    .ant-checkbox,
+    .ant-radio {
+      display: none;
+    }
+
+    .ant-radio-wrapper {
+      display: block;
+      line-height: 0;
+      height: auto;
+    }
+
+
+
+    .title {
+      // height: 40px;
+      // line-height: 1.2;
+      // color: red;
+      // margin-bottom: 100px;
+      margin: 8px 0;
+    }
+
+    .template-item {
+      background-color: rgba(255, 255, 255, 100%);
+      box-sizing: border-box;
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgba(228, 228, 228, 100%);
+      border-radius: 10px;
+      font-size: 12px;
+      padding: 10px;
+      line-height: 1.2;
+      margin: 5px 0;
+
+      .icon-box {
+        background-color: #1890ff;
+        padding: 1px 3px;
+        border-radius: 100px;
+      }
+
+      .icon {
+        font-size: 11px;
+        color: #fff;
+      }
+
+      .unselect {
+        padding: 6px;
+        border: 2px solid #1890ff;
+        border-radius: 100px;
+      }
+    }
+  }
+
+  .ant-form-item {
+    margin: 2px;
+  }
+
+  .loading-input {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #1890ff;
+    z-index: 999;
+  }
+
+  .ant-form-item-control-input-content {
+    // text-indent: 2em;
+    padding-left: 22px;
+  }
+
+  .ant-form-item-explain-error {
+    padding-left: 22px;
+  }
+}
+
+
+@media screen and (min-width: 1500px) {
+  .packagingService-build-second-container {
+    .content-container {
+      height: calc(40vh);
+    }
+  }
+}

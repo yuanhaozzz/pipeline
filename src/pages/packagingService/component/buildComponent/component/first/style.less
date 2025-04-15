@@ -1,0 +1,102 @@
+.packagingService-build-first-container {
+  height: calc(50vh + 42px);
+  position: relative;
+
+  .ant-form-item-label {
+    padding-bottom: 4px;
+  }
+
+  .first-error-message {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+
+  .ant-switch {
+    background-color: #4caf50;
+  }
+
+  .ant-switch-checked {
+    background-color: #1890ff;
+  }
+
+  .component-disabled {
+    color: #00000040 !important;
+  }
+
+  .component-disabled:hover {
+    cursor: not-allowed;
+  }
+
+  .ant-form-item {
+    margin-bottom: 15px;
+  }
+
+  .first-more-arrow {
+    font-size: 8px;
+    margin-left: 2px;
+    transform: rotate(0deg);
+    transition: all .3s;
+  }
+
+  .first-more-arrow-rotate {
+    transform: rotate(180deg);
+  }
+
+  .timed-exec {
+    background: #F9F9F9;
+    border-radius: 2px;
+    padding: 15px 10px;
+
+    .ant-switch {
+      background: #BFBFBF;
+    }
+
+    .ant-switch-checked {
+      background-color: #1890ff;
+    }
+
+    .ant-checkbox+span {
+      line-height: 23px;
+    }
+
+    .ant-form-item-row {
+      display: flex;
+      flex-direction: row;
+
+      .ant-form-item-label {
+        padding-right: 10px;
+      }
+
+      .ant-form-item-control {
+        width: auto;
+        margin-top: -5px;
+      }
+    }
+
+    .exec-date {
+      display: flex;
+      justify-content: space-between;
+
+      .ant-form-item {
+        flex-direction: row;
+      }
+
+      .ant-picker {
+        width: 215px;
+      }
+    }
+  }
+
+  .environmentVariable-form-branch-container .form-branch-right-box-width {
+    width: calc(100% - 232px);
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .packagingService-build-first-container {
+    height: calc(40vh + 42px);
+  }
+}

@@ -1,0 +1,37 @@
+.detailWrapper {
+  .info {
+    list-style: none;
+    padding: 0;
+    font-size: 13px;
+
+    >li {
+      width: 50%;
+      display: inline-block;
+      line-height: 30px;
+    }
+  }
+
+  :global {
+    .ant-drawer-header {
+      padding: 0 !important;
+    }
+
+    .ant-drawer-header-title {
+      button {
+        background-color: #3a84ff;
+        color: #fff;
+        cursor: pointer;
+        font-size: 24px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        width: 30px;
+
+        svg {
+          font-size: 12px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

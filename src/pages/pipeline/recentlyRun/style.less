@@ -1,0 +1,82 @@
+.flow-recently-run-container {
+  .record-header {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .list-bottom {
+    margin-top: 2px;
+    color: #797979;
+  }
+
+  .record-title {
+    font-size: 12px;
+    margin: 0;
+
+    span {
+      margin-right: 30px;
+
+      .name {
+        color: #000;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .descEllipsis {
+    -webkit-line-clamp: 2;
+    display: box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    p {
+      margin-bottom: 5px;
+    }
+  }
+
+  .ant-tabs-top>.ant-tabs-nav::before {
+    border: none;
+  }
+
+  .common-list-context-header {
+    display: none;
+  }
+
+  .FlowLine-create-segmented-wrap {
+    position: relative;
+    user-select: none;
+    margin-bottom: 20px;
+
+    .segmented-position {
+      position: absolute;
+      left: 50%;
+      top: 12px;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .status-pending {
+    color: #63656e;
+  }
+
+  .status-running {
+    color: #459fff;
+  }
+
+  .status-canceled {
+    color: #f6b026;
+  }
+
+  .status-success {
+    color: #4dcb4f;
+  }
+
+  .status-failed,
+  .status-timeout {
+    color: #e23f3c;
+  }
+
+  .play {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,54 @@
+.flow-log-container {
+  width: 100%;
+  height: 100%;
+  background-color: #1e1e1e;
+  padding: 5px 10px;
+  box-sizing: border-box;
+
+  .flow-log-job {
+    height: 100%;
+
+    .flow-log-detail-container {
+      // height: 300px;
+
+      .log-detail-list-scroll {
+        height: 100%;
+      }
+    }
+
+    .flew-log-job-item {
+      cursor: pointer;
+      position: relative;
+      margin: 10px 0 15px;
+
+      .item-nav {
+        position: relative;
+      }
+
+      .item-arrow {
+        margin-right: 10px;
+        color: #898989;
+        font-size: 12px;
+        transition: all .3s;
+      }
+
+      .item-status {
+        position: relative;
+        user-select: none;
+      }
+
+      .item-name {
+        color: #fff;
+        font-size: 13px;
+        margin-right: 5px;
+        // user-select: none;
+      }
+    }
+
+    .action-log {
+      .item-arrow {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}

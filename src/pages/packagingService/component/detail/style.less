@@ -1,0 +1,71 @@
+.detail-modal {
+  .ant-modal-body {
+    padding: 20px;
+  }
+
+}
+
+.packagingService-detail-container {
+  font-size: 12px;
+  max-height: 60vh;
+
+  .status-icon {
+    font-size: 28px;
+    width: 40px;
+    height: 40px;
+
+    .running {
+      background-color: rgba(64, 158, 255, 100%);
+      color: #fff;
+      width: 34px;
+      height: 34px;
+      border-radius: 100px;
+      animation: run 1s linear infinite;
+      font-size: 16px;
+    }
+
+    @keyframes run {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  .status-text {
+    margin-left: 2px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -2px;
+  }
+
+  .name {
+    color: #AAA;
+  }
+
+  .value {
+    color: #666;
+  }
+
+  .config-title {
+    font-weight: bold;
+    font-size: 12px;
+    margin: 10px 0;
+  }
+
+  .config-options {
+    margin: 10px 0;
+    text-indent: 2em;
+    position: relative;
+
+    .copy {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

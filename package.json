@@ -1,0 +1,41 @@
+{
+  "private": true,
+  "author": "yuanhao <Hao.Yuan@amd.com>",
+  "scripts": {
+    "build": "max build",
+    "dev": "max dev",
+    "format": "prettier --cache --write .",
+    "postinstall": "max setup",
+    "prepare": "husky",
+    "setup": "max setup",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.0.1",
+    "@ant-design/pro-components": "^2.4.4",
+    "@ckeditor/ckeditor5-react": "^5.0.6",
+    "@uiw/codemirror-extensions-color": "^4.19.9",
+    "@uiw/codemirror-extensions-langs": "^4.19.9",
+    "@uiw/codemirror-theme-xcode": "^4.19.9",
+    "@uiw/codemirror-themes-all": "^4.19.9",
+    "@uiw/react-codemirror": "^4.19.9",
+    "@umijs/max": "^4.4.6",
+    "anser": "^2.1.1",
+    "ansi-to-react": "^6.1.6",
+    "antd": "^5.4.0",
+    "ckeditor5-suiyuan-test": "^1.0.0",
+    "jsoneditor": "^9.10.0",
+    "react-diff-viewer": "^3.1.1",
+    "umi-request": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.33",
+    "@types/react-dom": "^18.0.11",
+    "husky": "^9",
+    "lint-staged": "^13.2.0",
+    "prettier": "^2.8.7",
+    "prettier-plugin-organize-imports": "^3.2.2",
+    "prettier-plugin-packagejson": "^2.4.3",
+    "typescript": "^5.0.3"
+  }
+}

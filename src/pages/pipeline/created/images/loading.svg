@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Content / CI / Status / Running</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="12" height="14"></rect>
+    </defs>
+    <g id="Content-/-CI-/-Status-/-Running" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" stroke="#BED8FF" stroke-width="4" cx="12" cy="12" r="10"></circle>
+        <g id="Group" transform="translate(12.000000, 0.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask"></g>
+            <circle id="Oval" stroke="#2C81FF" stroke-width="4" mask="url(#mask-2)" cx="0" cy="12" r="10"></circle>
+        </g>
+    </g>
+</svg>

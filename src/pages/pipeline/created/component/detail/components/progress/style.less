@@ -1,0 +1,68 @@
+.flow-detail-tool-progress {
+  white-space: nowrap;
+
+  .progress-text {
+    color: #8b8b8b;
+    margin: 0 10px;
+  }
+
+  .progress-item {
+    width: 10px;
+    height: 10px;
+    border-radius: 40px;
+    margin-right: 7px;
+    position: relative;
+    cursor: pointer;
+    transition: all .4s;
+
+    .progress-item-running {
+      position: absolute;
+      top: -5px;
+      left: -1px;
+      font-size: 12px;
+    }
+
+    .progress-item-circle {
+      width: 10px;
+      height: 10px;
+      border-radius: 40px;
+    }
+
+    .progress-item-line {
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      transform: translateY(-50%);
+      width: 7px;
+      height: 2px;
+    }
+  }
+
+  .progress-item-success:hover {
+    box-shadow: 0 0 3px 3px #34d97b;
+  }
+
+  .progress-item-skipped:hover {
+    box-shadow: 0 0 3px 3px #9BABB8;
+  }
+
+  .progress-item-failed:hover {
+    box-shadow: 0 0 3px 3px #ff5656;
+  }
+
+  .progress-item-timeout:hover {
+    box-shadow: 0 0 3px 3px #ff5656;
+  }
+
+  .progress-item-canceled:hover {
+    box-shadow: 0 0 3px 3px #f8b300;
+  }
+
+  .progress-item-running:hover {
+    box-shadow: 0 0 3px 3px #459fff;
+  }
+
+  .progress-item-pending:hover {
+    box-shadow: 0 0 3px 3px #d7d7d7;
+  }
+}

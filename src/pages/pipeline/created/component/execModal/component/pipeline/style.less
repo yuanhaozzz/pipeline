@@ -1,0 +1,105 @@
+.flow-execModal-wrap::-webkit-scrollbar {
+  width: 6px;
+}
+
+.flow-execModal-wrap::-webkit-scrollbar-thumb {
+  width: 6px;
+  background-color: gainsboro;
+  border-radius: 100px;
+}
+
+.flow-execModal-wrap::-webkit-scrollbar {
+  position: fixed;
+
+  /* 让滚动条固定在页面上 */
+  bottom: 0;
+
+  /* 调整滚动条位置 */
+  z-index: 9999;
+
+  /* 确保滚动条在最顶层显示 */
+}
+
+.flow-execModal-wrap {
+  // height: 500px;
+  overflow-x: scroll;
+  border: 1px solid #dde4eb;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 12px;
+  overflow: scroll;
+  max-height: 300px;
+  position: relative;
+
+  .flow-execModal-wrap-bottom-scroll {
+    position: sticky;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    top: 10px;
+    left: 10px;
+    height: 16px;
+    background-color: gainsboro;
+    border-radius: 100px;
+    z-index: 9;
+  }
+
+  .stage {
+    background-color: #eff5ff;
+    border: 1px solid #d4e8ff;
+    color: #3c96ff;
+    text-align: center;
+    width: 200px;
+    font-size: 12px;
+    overflow: hidden; //超出的文本隐藏
+    text-overflow: ellipsis; //溢出用省略号显示
+    white-space: nowrap; //溢出不换行
+    padding: 0 10px;
+
+  }
+
+  .content {
+    overflow: hidden; //超出的文本隐藏
+    text-overflow: ellipsis; //溢出用省略号显示
+    white-space: nowrap; //溢出不换行
+  }
+
+  .job {
+    width: 177px;
+    margin: 3px 0;
+    background-color: #63656e;
+
+    .job-index {
+      padding: 2px 7px;
+      color: #fff;
+      font-size: 12px;
+      border-right: 1px solid #857f7f;
+    }
+
+    .job-name {
+      width: 20px;
+      padding: 2px 7px;
+      padding-left: 10px;
+      color: #fff;
+      font-size: 12px;
+      flex: 1;
+    }
+  }
+
+  .task {
+    white-space: nowrap;
+    margin: 2px 0;
+    font-size: 12px;
+
+    .task-name {
+      width: 159px;
+      background-color: #fff;
+      border: 1px solid #c4cdd6;
+      margin-left: -5px;
+      padding: 0 5px;
+    }
+  }
+
+  .ant-tree .ant-tree-node-content-wrapper.ant-tree-node-selected {
+    background-color: #fff;
+  }
+}

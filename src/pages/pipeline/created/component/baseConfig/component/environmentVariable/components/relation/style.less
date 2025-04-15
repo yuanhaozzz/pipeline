@@ -1,0 +1,87 @@
+.flow-environmentVariable-relation-container {
+
+  // max-height: 70vh;
+  .relation-title {
+    font-weight: bold;
+  }
+
+  .top-scroll {
+    max-height: 400px;
+    padding: 5px;
+
+    .relation-item:first-child {
+      margin: 0;
+    }
+
+    .relation-item {
+      border: 1px solid #eee;
+      padding: 10px;
+      margin: 10px 0;
+
+      .item-default {
+        overflow: hidden; //超出的文本隐藏
+        text-overflow: ellipsis; //溢出用省略号显示
+        white-space: nowrap; //溢出不换行
+        // width: 90%;
+      }
+
+      .item-defalut-checkbox {
+        // overflow: hidden;
+        // text-overflow: ellipsis;
+        // white-space: nowrap;
+        // width: 100%;
+      }
+
+      label {
+        width: 100%;
+
+        span:nth-of-type(2) {
+          display: inline-block;
+          width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+
+      .ant-checkbox-wrapper {
+        position: relative;
+
+        .ant-checkbox {
+          // position: absolute;
+          // right: 0;
+          margin-right: 10px;
+        }
+      }
+
+      .ant-checkbox-wrapper+.ant-checkbox-wrapper {
+        margin: 0;
+      }
+
+      .ant-checkbox+span {
+        padding-right: 18px;
+        padding-left: 0;
+      }
+    }
+  }
+
+  .bottom-content {
+    margin-top: 5px;
+
+    .item-relation-radio {
+      border: 1px solid #eee;
+      padding: 10px;
+      margin-bottom: 5px;
+      position: relative;
+
+      .radio-reduce {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+      }
+    }
+  }
+}

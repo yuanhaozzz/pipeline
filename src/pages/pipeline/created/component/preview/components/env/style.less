@@ -1,0 +1,160 @@
+.common-component-form-row-container {
+  // background-color: #eee;
+  padding-top: 25px;
+
+  .ant-row {
+    background: #fff;
+    box-sizing: border-box;
+  }
+
+  .flow-preview-detail-env-repo-item {
+    border: 1px solid #d9d9d9;
+    margin-bottom: 6px;
+    padding: 5px 10px 8px;
+    position: relative;
+    background-color: #fff;
+
+    .repo-item-content {
+      flex-wrap: wrap;
+      // padding: 0 10px;
+
+      .left {
+        margin: 0 0 10px !important;
+      }
+
+      .ant-form-item-label {
+        padding-right: 15px;
+      }
+
+      &:last-child {
+        .left {
+          margin-bottom: 0 !important;
+
+          .ant-form-item-extra {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .arrow {
+      padding: 8px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transform: rotate(0deg);
+      transition: all .3s;
+      z-index: 9;
+    }
+
+    .transition-arrow {
+      transform: rotate(180deg);
+    }
+  }
+
+  .ant-radio-group {
+    display: block;
+    margin-top: -6px;
+  }
+
+  .ant-input {
+    height: 31px;
+  }
+
+  .form-row-box {
+    align-items: flex-start;
+    // padding: 10px 0;
+
+    .title {
+      width: 50px;
+      margin-top: 40px;
+    }
+
+    .content {
+      flex: 1;
+      // border-left: 1px solid #eee;
+      padding-left: 20px;
+      flex-wrap: wrap;
+      // align-items: flex-start;
+    }
+  }
+
+  .left {
+    // margin: 6px !important;
+    // margin: 0px 0px 6px !important;
+    width: 100% !important;
+    align-items: stretch;
+
+    .ant-form-item {
+      // margin: 6px 0 !important;
+    }
+  }
+
+  .preview-item-type-container {
+    margin: 5px 0 10px !important;
+    display: flow-root;
+
+    .ant-col.ant-form-item-control {
+      .ant-form-item-explain,
+      .ant-form-item-extra {
+        display: flow-root;
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  .ant-switch {
+    background-color: #4caf50;
+  }
+
+  .ant-switch-checked {
+    background-color: #1890ff;
+  }
+
+  .environmentVariable-form-branch-container,
+  .common-form-commitId-container {
+    .ant-radio-group {
+      display: block;
+      margin-top: 0;
+    }
+
+    .ant-form-item {
+      margin: 0 !important;
+    }
+  }
+
+  .preview-env-moreOptions-container {
+    margin-top: 10px;
+
+    .arrow {
+      font-size: 8px;
+      transition: all .3s;
+      transform: rotate(0);
+      margin-left: 2px;
+    }
+
+    .arrow-action {
+      transform: rotate(-180deg);
+    }
+
+    .moreOptions-control {
+      color: rgb(24, 144, 255);
+      cursor: pointer;
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .ant-form-item-control,
+  .ant-form-item-explain-connected {
+    span p {
+      margin: 0;
+      line-height: 1.4;
+    }
+  }
+
+  .ant-form-item-extra {
+    margin-bottom: 0 !important;
+    min-height: auto !important;
+  }
+}

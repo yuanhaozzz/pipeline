@@ -1,0 +1,39 @@
+.common-analysis-download-container {
+  .button {
+    font-size: 18px;
+    cursor: pointer;
+    opacity: .6;
+  }
+
+  .button:hover {
+    color: #3b91ff;
+  }
+
+  .analysis-data {
+    position: absolute;
+    left: 0;
+    top: 125px;
+    width: 100%;
+    height: calc(100% - 125px);
+    background-color: #fff;
+    z-index: 1;
+
+    .analysis-data-content {
+      margin-top: 50px;
+      height: calc(100% - 50px);
+    }
+
+    .close {
+      position: absolute;
+      right: 15px;
+      top: 15px;
+    }
+  }
+
+  table {
+    td,
+    th {
+      padding: 5px 10px;
+    }
+  }
+}

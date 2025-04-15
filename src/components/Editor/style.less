@@ -1,0 +1,168 @@
+.common-editor-wrap {
+  background-color: #fff;
+  padding: 0 20px;
+  position: relative;
+
+  .common-editor-upload-loading-container {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 80%);
+
+    .box {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .ck-toolbar {
+    border: none !important;
+    border-bottom: 1px solid #eee !important;
+    padding-bottom: 10px;
+  }
+
+
+  .ck-toolbar__separator {
+    background-color: #fff;
+  }
+
+  .show-title {
+    .ck-content {
+      padding-top: 60px !important;
+    }
+  }
+
+  .ck-content {
+    min-height: 200px;
+    // height: 500px;
+    // overflow-y: scroll;
+    margin: 0 20px;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+
+
+  .ck-content::-webkit-scrollbar {
+    display: none
+  }
+
+  .ck-heading-dropdown {
+    width: 100px;
+
+    .ck-reset {
+      width: 100px;
+      text-align: center;
+
+      button {
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  // .ck-content .table {
+  //   margin: 0;
+  // }
+
+  .editor-title-input {
+    position: absolute;
+    top: 62px;
+    left: 45px;
+    width: calc(100% - 95px);
+    opacity: 1;
+    // overflow: hidden;
+    resize: none;
+    // transition: all .5s;
+    // overflow: hidden;
+    // height: 39px;
+
+    textarea,
+    input {
+      word-break: break-all;
+      white-space: pre-line;
+      font-weight: bold;
+      outline: none;
+      border: none;
+      font-size: 22px !important;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      resize: none;
+      height: 36px;
+    }
+
+    .input-action {
+      visibility: visible;
+    }
+  }
+
+  .editor-title-input::placeholder {
+    color: #999b9c;
+  }
+
+  .layer {
+    width: 100%;
+    height: 40px;
+    background-color: gainsboro;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .4;
+    z-index: 2;
+    cursor: not-allowed; //是禁用的样式 一个圆圈中间一个斜杠
+    //其中还有一个属性也是这个样式  
+  }
+}
+
+
+
+// .report-container-main-editor {
+
+//   // figure {
+//   //   display: flex;
+//   //   justify-content: center;
+//   //   align-content: center;
+//   // }
+//   .ck-content .image {
+//     margin: 0;
+//   }
+
+//   // .ck-content .table {
+//   //   margin: 0;
+//   // }
+
+//   .ck-select-title-text {
+//     font-size: 12;
+//   }
+
+
+//   td {
+//     border: 1px solid #bfbfbf;
+//     min-width: 2em;
+//     padding: 0.4em;
+//   }
+
+//   .table table th {
+//     background-color: #0000000d !important;
+//     color: #000 !important;
+//   }
+
+//   h2 {
+//     font-weight: bold;
+//   }
+
+//   a span {
+//     color: #1890ff !important;
+//   }
+
+
+
+// }

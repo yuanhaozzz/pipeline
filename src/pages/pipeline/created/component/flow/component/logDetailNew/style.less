@@ -1,0 +1,163 @@
+.flow-log-detail-container {
+  padding: 0 5px;
+  box-sizing: border-box;
+  height: calc(100% - 50px);
+  color: #fff;
+  position: relative;
+  font-family: "DejaVu Sans Mono", "Liberation Mono", Consolas, "Ubuntu Mono", "Courier New", "andale mono", "lucida console", monospace;
+
+  .log-loading-container {
+    .dot {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      margin: 0 4px;
+      border-radius: 50%;
+      background: #fff;
+      animation: blinking-dot 1s linear infinite;
+    }
+
+    @keyframes blinking-dot {
+      0% {
+        opacity: 1;
+      }
+
+      25% {
+        opacity: 0.4;
+      }
+
+      75% {
+        opacity: 0.4;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+
+  .log-loading-container .dot:nth-child(2) {
+    animation-delay: 0.33s;
+  }
+
+  .log-loading-container .dot:nth-child(3) {
+    animation-delay: 0.66s;
+  }
+
+  .flow-log-detail-loading {
+    color: #fff;
+    // font-size: 20px;
+  }
+
+  .log-detail-list-scroll {
+    height: calc(100% - 40px);
+    overflow-y: scroll;
+  }
+
+  .log-detail-list-scroll {
+    overflow-y: scroll;
+  }
+
+  .log-detail-list-scroll::-webkit-scrollbar {
+    width: 16px;
+    height: 0;
+  }
+
+  .log-detail-list-scroll::-webkit-scrollbar-thumb {
+    // width: 16px;
+    background: rgba(121, 121, 121, 55%);
+    // border-radius: 100px;
+  }
+
+  .log-empty {
+    height: 100px !important;
+    font-size: 40px;
+
+    .empty {
+      text-align: center;
+
+      p {
+        font-size: 12px;
+        margin-top: -10px;
+      }
+    }
+  }
+
+  .log-detail-list {
+    position: relative;
+
+    .log-detail-list-item {
+      color: #fff;
+      font-size: 13px;
+      overflow: hidden;
+      cursor: text;
+      align-items: flex-start;
+
+      .item-num {
+        text-align: center;
+        user-select: none;
+        white-space: nowrap;
+      }
+
+      .item-date {
+        white-space: nowrap;
+        margin-right: 10px;
+        color: #b3aeae;
+      }
+
+      .item-name {
+        margin-left: 15px;
+        width: calc(100% - 160px);
+        word-break: break-all;
+      }
+    }
+
+    .log-detail-list-item:hover {
+      background: rgba(121, 121, 121, 40%);
+    }
+
+
+  }
+
+  .log-detail-mini-nav {
+    position: absolute;
+    right: 20px;
+    top: 2px;
+    height: 100%;
+    width: 120px;
+    display: block;
+    cursor: default;
+    user-select: none;
+    overflow: hidden;
+
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .mini-nav-layer {
+      width: 100%;
+      height: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(151, 151, 151, 50%);
+    }
+  }
+
+  .ansi-red-fg {
+    color: #ff6161;
+    font-weight: 600;
+  }
+
+  .ansi-cyan-fg {
+    color: #00bdbd;
+    font-weight: 600;
+  }
+
+  .ansi-green-fg {
+    color: #00d600;
+    font-weight: 600;
+  }
+}

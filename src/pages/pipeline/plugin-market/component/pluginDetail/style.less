@@ -1,0 +1,33 @@
+.pluginMarket-plugin-detail {
+  background-color: #fff;
+  padding: 20px;
+  position: relative;
+
+  .edit-button {
+    position: fixed;
+    top: 142px;
+    right: 55px;
+  }
+
+  .CodeMirrorReadonly {
+    cursor: not-allowed;
+
+    .cm-scroller,
+    .cm-line {
+      background: #606060;
+    }
+
+    .cm-gutters,
+    .cm-activeLineGutter,
+    .cm-lineNumbers .cm-gutterElement {
+      background: #777;
+    }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  /* 在此处设置元素的宽度 */
+  .pluginMarket-plugin-detail-modal {
+    width: 70% !important;
+  }
+}

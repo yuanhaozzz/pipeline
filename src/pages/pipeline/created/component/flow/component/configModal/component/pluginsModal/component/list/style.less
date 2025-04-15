@@ -1,0 +1,54 @@
+.flow-plugins-list-container {
+  height: calc(85vh - 130px);
+
+  .plugin-item {
+    height: 100px;
+    padding: 10px 10px 9px;
+    width: 100%;
+
+    .item-left {
+      color: #c3cdd7;
+      font-size: 50px;
+      height: 50px;
+      line-height: 50px;
+      margin-right: 15px;
+      width: 50px;
+
+      img {
+        border-radius: 4px;
+        width: 100%;
+      }
+    }
+
+    .item-center {
+      font-size: 12px;
+      // font-weight: 700;
+      flex: 1;
+      padding-top: 13px;
+
+      h2 {
+        width: 300px;
+        font-size: 12px;
+        font-weight: 700;
+        color: #4a4a4a;
+        margin-bottom: 2px;
+        overflow: hidden; //超出的文本隐藏
+        text-overflow: ellipsis; //溢出用省略号显示
+        white-space: nowrap; //溢出不换行
+      }
+
+      span {
+        font-size: 12px;
+        font-weight: 700px;
+        color: rgb(99, 101, 110);
+        display: block;
+        width: 300px;
+        margin-bottom: 2px;
+        overflow: hidden; //超出的文本隐藏
+        text-overflow: ellipsis; //溢出用省略号显示
+        white-space: nowrap; //溢出不换行
+      }
+    }
+
+  }
+}

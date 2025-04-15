@@ -1,0 +1,62 @@
+.packagingService-container {
+  background-color: #fff;
+
+  .packagingService-header {
+    padding: 10px 20px;
+
+    .packagingService-header-left {
+      font-size: 12px;
+      align-items: flex-start;
+      color: #AAA;
+
+      .left-icon {
+        font-size: 12px;
+        cursor: pointer;
+        margin-top: 5px;
+      }
+    }
+
+    .packagingService-header-center {
+      user-select: none;
+    }
+  }
+
+  .status-icon {
+    font-size: 28px;
+    width: 40px;
+    height: 40px;
+
+    .running {
+      background-color: rgba(64, 158, 255, 100%);
+      color: #fff;
+      width: 34px;
+      height: 34px;
+      border-radius: 100px;
+      animation: run 1s linear infinite;
+      font-size: 16px;
+    }
+
+    @keyframes run {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
+
+
+// .ant-btn-primary:hover {
+//   background: #40a9ff !important;
+// }
+
+// #root .ant-btn-primary {
+//   background: #1890ff;
+// }
+
+// .ant-btn-background-ghost.ant-btn-primary {
+//   background: transparent !important;
+// }

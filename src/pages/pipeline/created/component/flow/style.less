@@ -1,0 +1,391 @@
+.pipeline-line-container {
+  .stage-container {
+    position: relative;
+    padding-right: 100px;
+    align-items: flex-start;
+  }
+
+  .add-stage-dotted {
+    border-top: 2px dashed #c3cdd7;
+    height: 0;
+    left: 30px;
+    position: absolute;
+    top: 24px;
+    width: 100%;
+  }
+
+
+}
+
+// 新增/编辑
+.flow-status-1 {
+  .stage-box {
+    .stage-item:hover .stage-operate-add {
+      opacity: 1;
+    }
+
+    .stage-item:hover .stage-operate-close {
+      opacity: 1;
+    }
+
+    .left-add-stage,
+    .right-add-stage {
+      color: #3c96ff;
+    }
+
+    .stage-item {
+      background-color: #eff5ff;
+      border: 1px solid #d4e8ff;
+      color: #3c96ff;
+    }
+
+    .stage-arrow-left {
+      color: #3c96ff;
+      background-color: #3c96ff;
+    }
+
+    .stage-arrow-left::before {
+      background-color: #3c96ff;
+    }
+
+    .stage-arrow-right {
+      .right-line {
+        background-color: #3c96ff;
+      }
+    }
+
+    .stage-arrow-left {
+      color: #3c96ff;
+      background-color: #3c96ff;
+    }
+
+    .stage-arrow-left::before {
+      background-color: #3c96ff;
+    }
+
+    .stage-arrow-right {
+      .right-line {
+        background-color: #3c96ff;
+      }
+    }
+
+    .other-right-line,
+    .job-right-line {
+      border-right: 2px solid #3c96ff;
+      border-bottom: 2px solid #3c96ff;
+    }
+
+    .job-left-line,
+    .other-left-line {
+      border-left: 2px solid #3c96ff;
+      border-bottom: 2px solid #3c96ff;
+    }
+
+    .other-left-line {
+      border-left: 2px solid #3c96ff;
+      border-bottom: 2px solid #3c96ff;
+    }
+
+    .job-left-arrow {
+      color: #3c96ff;
+    }
+
+    .other-right-point-common {
+      background-color: #3c96ff;
+    }
+
+  }
+
+  .stage-item:hover {
+    color: #000;
+    border-color: #1a6df3;
+    background-color: #d1e2fd;
+  }
+
+  .jobs-box {
+    .job-item {
+      .item-container {
+        .job-item-detail:hover .detail-operate-add {
+          opacity: 1;
+        }
+
+        .job-item-detail:hover .detail-operate-close {
+          opacity: 1;
+        }
+
+        .job-item-detail {
+          background: #33333f;
+
+          .detail-num {
+            background-color: #3c96ff;
+          }
+        }
+
+      }
+    }
+  }
+
+  .step-box {
+    .step-item:hover .step-operate-add {
+      opacity: 1;
+    }
+
+    .step-item:hover .step-operate-close {
+      opacity: 1;
+    }
+
+    .step-item:hover {
+      border-color: #3c96ff;
+    }
+
+    .step-item:hover .step-item-name {
+      color: #3c96ff;
+    }
+
+    .step-item:hover .step-item-icon {
+      color: #3c96ff;
+    }
+  }
+}
+
+// 预览
+.flow-status-2,
+.flow-status-3 {
+  .stage-box {
+    .stage-item {
+      background-color: #f3f3f3;
+      border-color: #d0d8ea;
+      color: #000;
+      border: 1px solid #d0d8ea;
+
+      .stage-operate-add,
+      .stage-operate-close {
+        display: none;
+      }
+    }
+
+    .stage-arrow-left {
+      color: #c3cdd7;
+      background-color: #c3cdd7;
+    }
+
+    .stage-arrow-left::before {
+      background-color: #c3cdd7;
+    }
+
+    .stage-arrow-right {
+      .right-line {
+        background-color: #c3cdd7;
+      }
+    }
+
+    .other-right-line,
+    .job-right-line {
+      border-right: 2px solid #c3cdd7;
+      border-bottom: 2px solid #c3cdd7;
+    }
+
+    .job-left-line,
+    .other-left-line {
+      border-left: 2px solid #c3cdd7;
+      border-bottom: 2px solid #c3cdd7;
+    }
+
+    .other-left-line {
+      border-left: 2px solid #c3cdd7;
+      border-bottom: 2px solid #c3cdd7;
+    }
+
+    .job-left-arrow {
+      color: #c3cdd7;
+    }
+
+    .other-right-point-common {
+      background-color: #c3cdd7;
+    }
+  }
+
+  .jobs-box {
+    .job-item {
+      .item-container {
+        .job-item-detail {
+          background: #63656e;
+        }
+      }
+
+      .detail-operate-add,
+      .detail-operate-close {
+        display: none;
+      }
+    }
+  }
+
+  .step-box {
+    .step-operate-add {
+      display: none;
+    }
+
+    .step-operate-close {
+      display: none;
+    }
+  }
+}
+
+// 执行详情
+.flow-status-3 {
+  .stage-box {
+    .stage-item-status-pending {}
+
+    .stage-item-status-running {
+      background-color: #eff5ff;
+      border-color: #d4e8ff;
+      color: #3c96ff;
+    }
+
+    .stage-item-status-success {
+      background-color: #f3fff6;
+      border-color: #bbefc9;
+      color: #000;
+    }
+
+    .stage-item-status-failed,
+    .stage-item-status-timeout {
+      border-color: #ffd4d4;
+      background-color: #fff9f9;
+      color: #000;
+    }
+  }
+
+  .jobs-box {
+    .job-item-status-pending {
+      .item-container {
+        .job-item-detail {}
+      }
+    }
+
+    .job-item-status-running {
+      .item-container {
+        .job-item-detail {
+          background: #459fff;
+          color: #fff;
+          border-color: #459fff;
+        }
+      }
+    }
+
+    .job-item-status-success {
+      .item-container {
+        .job-item-detail {
+          color: #fff;
+          background-color: #34d97b;
+          border-color: #34d97b;
+        }
+      }
+    }
+
+    .job-item-status-failed,
+    .job-item-status-timeout {
+      .item-container {
+        .job-item-detail {
+          color: #fff;
+          background-color: #ff5656;
+          border-color: #ff5656;
+        }
+      }
+    }
+
+    .job-item-status-canceled {
+      .item-container {
+        .job-item-detail {
+          color: #fff;
+          background-color: #f6b026;
+          border-color: #f6b026;
+        }
+      }
+    }
+
+    .job-item-status-skipped {
+      .item-container {
+        .job-item-detail {
+          color: #fff;
+          background-color: #9BABB8;
+          border-color: #9BABB8;
+        }
+      }
+    }
+  }
+
+  .step-box {
+    // .step-item-status-success {
+    //   border-color: #34d97b;
+    // }
+
+    // .step-item-status-success::before {
+    //   background: #34d97b;
+    // }
+
+    // .step-item-status-success::after {
+    //   border: 2px solid #34d97b;
+    // }
+
+    // .step-item-status-canceled {
+    //   border-color: #ffb400;
+    // }
+
+    // .step-item-status-canceled::before {
+    //   background: #ffb400;
+    // }
+
+    // .step-item-status-canceled::after {
+    //   border: 2px solid #ffb400;
+    // }
+
+    // .step-item-status-skipped {
+    //   border-color: #9BABB8;
+    // }
+
+    // .step-item-status-skipped::before {
+    //   background: #9BABB8;
+    // }
+
+    // .step-item-status-skipped::after {
+    //   border: 2px solid #9BABB8;
+    // }
+
+    // .step-item-status-failed,
+    // .step-item-status-timeout {
+    //   border-color: #ff5656;
+    // }
+
+    // .step-item-status-failed::before {
+    //   background: #ff5656;
+    // }
+
+    // .step-item-status-timeout::before {
+    //   background: #ff5656;
+    // }
+
+    // .step-item-status-failed::after {
+    //   border: 2px solid #ff5656;
+    // }
+
+    // .step-item-status-timeout::after {
+    //   border: 2px solid #ff5656;
+    // }
+  }
+
+  .animation-icon-success {
+    animation: successIcon ease-in .5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes successIcon {
+    0% {
+      left: -50px;
+    }
+
+    100% {
+      left: 13px;
+    }
+  }
+}

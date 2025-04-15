@@ -1,0 +1,92 @@
+.common-new-list-wrapper {
+    tbody {
+        .ant-table-cell {
+            padding: 6px 16px
+        }
+    }
+
+    .common-list-search-wrapper {
+        background-color: #fff;
+        margin: 20px 0;
+        padding-left: 20px;
+        padding-bottom: 2px;
+
+        .search-options {
+            flex-wrap: wrap;
+        }
+
+        .ant-divider {
+            margin: 0;
+        }
+
+        .layout {
+            margin: 15px;
+            margin-left: 0;
+        }
+
+        .layout-button {
+            margin: 15px 0;
+
+            .button {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .common-list-content {
+        padding: 5px 20px;
+        background-color: #fff;
+
+        .common-list-context-header {
+            padding: 10px 0;
+
+
+        }
+    }
+}
+
+.common-list-icon-model-table {
+    width: 30% !important;
+
+    .icon-radio {
+        margin-bottom: 20px;
+    }
+
+    .icon-columns-item-title {
+        overflow: hidden; //超出的文本隐藏
+        text-overflow: ellipsis; //溢出用省略号显示
+        white-space: nowrap; //溢出不换行
+        width: 78px;
+    }
+
+    .icon-columns {
+        flex-wrap: wrap;
+
+        .icon-columns-item {
+            width: 20%;
+            height: 25px;
+            overflow: hidden;
+            user-select: none;
+
+            .icon-columns-item-sort {
+                cursor: move;
+
+                .sort-title {
+                    white-space: nowrap;
+                    margin-left: 10px;
+                    overflow: hidden; //超出的文本隐藏
+                    text-overflow: ellipsis; //溢出用省略号显示
+                    white-space: nowrap; //溢出不换行
+                    width: 78px;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 1700px) {
+    .common-list-icon-model-table {
+        width: 45% !important;
+    }
+}

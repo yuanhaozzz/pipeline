@@ -1,0 +1,60 @@
+.min-map-container {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 8;
+
+  .min-map-icon {
+    position: relative;
+    z-index: 1;
+  }
+
+  .min-map-close {
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .min-map-open {
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+
+  .min-map-render {
+    position: absolute;
+    left: -187px;
+    top: -115px;
+    display: none;
+    box-shadow: 0 0 6px 0 #3132381a;
+
+    .min-map-canvas {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .min-map-layer {
+      // width: 200px;
+      // height: 134px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: #fff;
+      border: 1px solid #999;
+      border-radius: 2px;
+      cursor: grab;
+      opacity: .5;
+      user-select: none;
+      z-index: 2;
+      box-sizing: border-box;
+    }
+
+    .min-map-layer:hover {
+      border: 1px solid #333;
+    }
+  }
+
+  .show-min-map {
+    display: block;
+  }
+}

@@ -1,0 +1,206 @@
+.modify-form-environmentVariable-config {
+  position: relative;
+
+  .common-uploadfile-container {
+    .ocr-upload {
+      // margin-top: 10px;
+      height: auto;
+
+      .ocr-upload-button {
+        margin-bottom: 5px;
+      }
+
+      .ant-upload-text {
+        margin: 0;
+      }
+
+      .ocr-upload-input {
+        height: 100% !important;
+      }
+    }
+
+    .image-box {
+      height: auto;
+      padding: 3px;
+    }
+  }
+
+
+  .add {
+    position: sticky;
+    left: 92%;
+    top: 30px;
+    z-index: 999;
+  }
+
+  .relation {
+    position: sticky;
+    left: 92%;
+    top: 75px;
+    z-index: 999;
+  }
+
+  // .move {
+  //   position: sticky;
+  //   left: 92%;
+  //   top: 168px;
+  //   z-index: 999;
+  // }
+
+  .move {
+    font-size: 15px;
+    margin-right: 5px;
+    cursor: move;
+  }
+
+  .expand-button {
+    position: sticky;
+    left: 92%;
+    top: 121px;
+    z-index: 999;
+
+    .expand {
+      transform: rotate(0);
+      transition: transform .3s;
+    }
+
+    .expand-active {
+      transform: rotate(180deg);
+    }
+  }
+
+  .form-background-container {
+    background: #f8f8f8;
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+
+  .form-config-container {
+    margin-top: 50px;
+    flex-direction: column;
+  }
+
+  @keyframes blink {
+    0% {
+      border-color: #458ed7;
+    }
+
+    20% {
+      border-color: #ebf0f5;
+    }
+
+    40% {
+      border-color: #458ed7;
+    }
+
+    60% {
+      border-color: #ebf0f5;
+    }
+
+    80% {
+      border-color: #458ed7;
+    }
+  }
+
+  .form-config-item-blink {
+    animation: blink 2s;
+  }
+
+  .form-config-item-container {
+    width: 80%;
+    position: relative;
+  }
+
+  .form-config-item {
+    width: 100%;
+    background-color: #fff;
+    color: #7b7d8a;
+    border: 1px solid #ebf0f5;
+    border-radius: 3px;
+    font-size: 12px;
+    margin: 4px 0;
+
+    .form-config-item-name {
+      width: 98%;
+      display: block;
+      overflow: hidden; //超出的文本隐藏
+      text-overflow: ellipsis; //溢出用省略号显示
+      white-space: nowrap; //溢出不换行
+    }
+
+    .item-header {
+      cursor: pointer;
+      padding: 10px 15px;
+      padding-right: 0;
+      position: relative;
+      user-select: none;
+
+      .remove {
+        width: 50px;
+        height: 40px;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .arrow {
+        transform: rotate(0);
+        transition: all .3s;
+
+      }
+
+      .arrow-rotate {
+        transform: rotate(90deg);
+      }
+    }
+
+    .item-row {
+      padding: 0 20px;
+      position: relative;
+
+      .row-left-title {
+        position: absolute;
+        left: 5px;
+        top: 1px;
+        font-weight: bold;
+      }
+
+      .row-left,
+      .row-right {
+        width: 49%;
+      }
+
+      .row-left-name {
+        width: 30px;
+      }
+
+      .row-right-repo,
+      .all-repo {
+        flex: 1;
+      }
+
+      .row-left-repo {
+        width: calc(50% - 50px);
+        margin-right: 10px;
+      }
+
+      .row-right-repo {
+        width: calc(70% - 50px);
+      }
+
+      .all-repo {
+        width: calc(100% - 80px);
+      }
+
+      .all {
+        width: 100%;
+      }
+    }
+  }
+
+  .config-form {
+    width: 100%;
+    min-height: 200px;
+  }
+}

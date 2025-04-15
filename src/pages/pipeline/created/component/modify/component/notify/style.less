@@ -1,0 +1,49 @@
+.modify-base-config-container {
+  height: 93%;
+  border-radius: 0 0 2px 2px;
+  border: 1px solid #dcdee5;
+  // min-width: 1000px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+
+  .config-left {
+    height: 100%;
+    width: 17%;
+    border-right: 1px solid #dde4eb;
+
+    .menu-item {
+      cursor: pointer;
+      display: inline-block;
+      font-size: 12px;
+      height: 44px;
+      line-height: 44px;
+      max-width: auto;
+      overflow: hidden;
+      padding: 0 20px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 100%;
+    }
+
+    .config-menu-action {
+      background-color: #e0ecff;
+      color: #3c96ff;
+    }
+  }
+
+  .config-right {
+    height: 100%;
+    background-color: #fff;
+    flex: 1;
+    overflow: auto;
+    padding: 0 25px 30px;
+
+    .config-right-option {
+      // display: none;
+    }
+
+    .config-right-option-show {
+      // display: block;
+    }
+  }
+}

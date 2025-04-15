@@ -1,0 +1,58 @@
+{
+  "id": "3652775",
+  "name": "potency",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "21053778",
+      "name": "板卡",
+      "font_class": "banka",
+      "unicode": "e682",
+      "unicode_decimal": 59010
+    },
+    {
+      "icon_id": "25996940",
+      "name": "协同办公",
+      "font_class": "coordination",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "1133576",
+      "name": "消费者洞察",
+      "font_class": "insight",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "1727378",
+      "name": "33资源",
+      "font_class": "resources",
+      "unicode": "e8a4",
+      "unicode_decimal": 59556
+    },
+    {
+      "icon_id": "6246414",
+      "name": "权限",
+      "font_class": "power",
+      "unicode": "e789",
+      "unicode_decimal": 59273
+    },
+    {
+      "icon_id": "23442198",
+      "name": "icon_公共代码管理",
+      "font_class": "code",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "26179679",
+      "name": "流水",
+      "font_class": "flowLine",
+      "unicode": "e753",
+      "unicode_decimal": 59219
+    }
+  ]
+}

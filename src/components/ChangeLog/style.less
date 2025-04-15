@@ -1,0 +1,111 @@
+.change-log-container {
+  .ant-modal-body {
+    padding: 0;
+  }
+
+  .change-log-content {
+    height: 600px;
+
+    .content-left::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .content-left::-webkit-scrollbar-thumb {
+      width: 6px;
+      background-color: gainsboro;
+      border-radius: 100px;
+    }
+
+    .content-right::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .content-right::-webkit-scrollbar-thumb {
+      width: 6px;
+      background-color: gainsboro;
+      border-radius: 100px;
+    }
+
+    .content-left,
+    .content-right {
+      overflow-y: scroll;
+      height: 100%;
+    }
+
+    .content-left {
+      width: 17%;
+      background: #fafbfd;
+      border-right: 1px solid #dcdee5;
+      box-sizing: border-box;
+
+      li,
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+
+      .content-left-list {
+        // padding: 0 20px;
+        padding-top: 40px;
+
+        .line {
+          // border-left: 5px solid #4b85ff;
+          width: 5px;
+          height: 100%;
+          background-color: #4b85ff;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+
+        li {
+          border-top: 1px solid #dcdee5;
+          padding: 10px 0;
+          padding-left: 30px;
+          position: relative;
+          cursor: pointer;
+
+          h3 {
+            color: #63656e;
+            font-size: 16px;
+            font-weight: 700;
+            margin: 0;
+          }
+
+          span {
+            color: #63656e;
+            font-size: 12px;
+            line-height: 17px;
+          }
+
+          .current {
+            background: #699df4;
+            border-radius: 2px;
+            color: #fff;
+            padding: 2px 5px;
+            position: absolute;
+            right: 5px;
+            top: 16px;
+          }
+        }
+
+        li:last-child {
+          border-bottom: 1px solid #dcdee5;
+        }
+      }
+    }
+
+    .content-right {
+      width: 83%;
+      padding: 45px;
+      box-sizing: border-box;
+      font-size: 15px;
+
+      .content-right-title {
+        font-size: 22px;
+        font-weight: bold;
+      }
+    }
+  }
+}
