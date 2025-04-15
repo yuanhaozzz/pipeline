@@ -3,9 +3,14 @@ import { defineConfig } from '@umijs/max';
 export default defineConfig({
   title: '浩哥的流水线',
   antd: {},
+  outputPath: 'dist/pipeline',
   access: {},
   model: {},
-  styles: ['//at.alicdn.com/t/c/font_4025906_pcu5afsldjc.css', '//at.alicdn.com/t/c/font_569659_khadwt9omj.css', '//at.alicdn.com/t/c/font_4376956_qikusykzz8i.css'],
+  styles: [
+    '//at.alicdn.com/t/c/font_4025906_pcu5afsldjc.css',
+    '//at.alicdn.com/t/c/font_569659_khadwt9omj.css',
+    '//at.alicdn.com/t/c/font_4376956_qikusykzz8i.css',
+  ],
   initialState: {},
   request: {},
   dva: {},
@@ -37,23 +42,22 @@ export default defineConfig({
           name: ' 流水线编辑',
           path: '/pipeline/created/modify',
           component: '@/pages/pipeline/created/component/modify',
-          menu: false
+          menu: false,
         },
         {
           name: ' 流水线预览',
           path: '/pipeline/created/preview',
           component: '@/pages/pipeline/created/component/preview',
-          menu: false
+          menu: false,
         },
         {
           name: ' 流水线详情',
           path: '/pipeline/created/detail',
           component: '@/pages/pipeline/created/component/detail',
-          menu: false
+          menu: false,
         },
-      ]
+      ],
     },
   ],
   npmClient: 'npm',
 });
-
