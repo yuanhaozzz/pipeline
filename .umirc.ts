@@ -4,6 +4,7 @@ export default defineConfig({
   title: '浩哥的流水线',
   antd: {},
   outputPath: 'dist/pipeline',
+  publicPath: '/pipeline/',
   access: {},
   model: {},
   styles: [
